@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="margen_estandar">16dp
+    </dimen><!-- La margen estándar hace referencia al espaciado que se usa con mayor frecuencia en Android. -->
+    <dimen name="altura_item">122dp
+    </dimen><!-- La altura del ítem es el tamaño de cada ítem de la lista. -->
+    <dimen name="margen_izquierda_contenido">72dp
+    </dimen><!--La margen izquierda del contenido se usa como alineación en el detalle.  -->
+    <dimen name="ancho_miniatura">120dp
+    </dimen><!-- El ancho de la miniatura hace referencia al tamaño de la imagen en los ítems de la lista -->
+    <dimen name="ancho_panel_lista">512dp
+    </dimen><!-- El ancho del panel de lista hace referencia a su tamaño.. -->
+
+
+    <!--Tablero de comunicacion-->
+
+    <!--Especifica el ancho de cada columna para el pictoframa de la frase a contruir de la cuadrícula GridView en agtributo columnWidth-->
+    <dimen name="dimPicFrase">60dp</dimen>
+    <!--Especifica el ancho de cada columna para el contenedor de pictogramas de acuerdo asu categoria de la cuadrícula GridView en agtributo columnWidth-->
+    <dimen name="dimPicCat">100dp</dimen>
+
+</resources>

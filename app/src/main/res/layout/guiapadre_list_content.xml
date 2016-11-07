@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/altura_item"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/margen_estandar"
+    android:layout_marginBottom="@dimen/margen_estandar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:id="@+id/txt_titulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/iv_miniatura"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:id="@+id/txt_resumen"
+        android:layout_below="@+id/txt_titulo"
+        android:layout_alignLeft="@+id/txt_titulo"
+        android:layout_alignRight="@+id/txt_titulo"
+        android:layout_above="@+id/txt_fecha"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/txt_fecha"
+        android:layout_alignLeft="@+id/txt_resumen"
+        android:layout_alignRight="@+id/txt_titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="@dimen/ancho_miniatura"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_miniatura"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margen_estandar"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+</RelativeLayout>

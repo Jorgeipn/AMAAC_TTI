@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/tecnica_detail_guia_de_uso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:textIsSelectable="true"
+            tools:context="mx.com.ipn.amaac.guiapadreDetailActivity"
+
+            />
+
+
+
+
+
+
+
+
+
+

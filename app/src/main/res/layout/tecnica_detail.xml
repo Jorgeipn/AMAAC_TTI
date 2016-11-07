@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_tecnicas_relajacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary_light"
+        android:layout_weight=".15"
+
+        >
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="fecha_oculta"
+            />
+
+        <TextView
+            android:id="@+id/tecnica_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:textIsSelectable="true"
+            tools:context="mx.com.ipn.amaac.TecnicaDetailFragment"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/nota"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0FF0000"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="1"
+        android:layout_weight=".85"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_menu_tecnica_youtube"
+            android:layout_weight=".8"
+            />
+
+        <TextView
+            android:layout_weight=".2"
+            android:id="@+id/text_instrucciones"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="mx.com.ipn.amaac.TecnicaDetailFragment"
+            android:text="Nota: No olvide que usted puede ver un vídeo acerca de esta técnica pulsando sobre el icono de vídeo en la parte superior de la pantalla"
+            android:textSize="12sp"
+            android:textColor="@color/colorIcons"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+

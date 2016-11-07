@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary_light"
+    tools:context="mx.com.ipn.amaac.tableroDeComunicacion.adaptadores.TableroDeComunicacion_main">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        style="@style/EstiloGeneralComunicadorAmaac"
+        tools:context="com.escom.tt2016.comunicador.MainActivity"
+        android:weightSum="1"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:ignore="DisableBaselineAlignment"
+            android:layout_weight=".3"
+            >
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="-10dp"
+
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <!--   El Frahment interfaz de usuario se utiliza para rellenar la interfaz de usuario principal del archivo
+                   ItemListActivity.java. Este archivo de diseño tiene dos contenidos diferentes pero con el mismo nombre
+                   de archivo. Este está dirigido a teléfono y la tableta.-->
+
+                <include layout="@layout/pictograma_list_categoria" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9">
+
+                <ImageView
+                    android:id="@+id/iv_regresar_categoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    app:srcCompat="@drawable/ic_regresar_back_black_24dp"
+                    tools:ignore="ContentDescription"
+                    android:onClick="go_to_pp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment"
+            android:layout_weight=".7"
+            android:minHeight="160dp"
+            >
+
+            <FrameLayout
+                android:id="@+id/fl_contenedorFrase"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_weight=".1"
+                android:background="@color/colorPrimary_light"
+                tools:ignore="RtlHardcoded" >
+
+                <include layout="@layout/pictograma_list_frase" />
+            </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:weightSum="1"
+                android:background="@color/colorPrimary_light"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_play_frase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_toast_megaphone_2"
+                    android:layout_weight=".5"
+                    android:adjustViewBounds="false"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    tools:ignore="ContentDescription,NestedWeights"
+                    android:onClick="playFrase"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_delete_frase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_comunicador_delete"
+                    android:layout_weight=".5"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    tools:ignore="ContentDescription"
+                    android:onClick="deleteFrase"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

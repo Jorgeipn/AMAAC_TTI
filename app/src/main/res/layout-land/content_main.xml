@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mx.com.ipn.amaac.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        tools:ignore="UselessLeaf,UselessParent"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            app:srcCompat="@drawable/ic_launcher_play_200dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical|center_horizontal"
+            tools:ignore="ContentDescription,RtlHardcoded,RtlSymmetry"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:paddingLeft="15dp"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight=".6"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_launcher_creador_frases_200dp"
+                android:id="@+id/imageView7"
+                android:layout_weight=".5"
+                android:scaleType="fitEnd"
+                tools:ignore="ContentDescription,NestedWeights"
+                android:paddingRight="100dp"
+                android:onClick="launch_tablero_de_comunicacion"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_launcher_ejercicios_especificos_200dp"
+                android:id="@+id/imageView6"
+                android:layout_weight=".5"
+                android:scaleType="fitStart"
+                tools:ignore="ContentDescription,NestedWeights"
+                android:paddingLeft="100dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
