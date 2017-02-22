@@ -68,6 +68,11 @@ public class TecnicaListActivity extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(TecnicaRelajacionContent.ITEMS));
     }
 
+
+
+
+
+
     public class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 

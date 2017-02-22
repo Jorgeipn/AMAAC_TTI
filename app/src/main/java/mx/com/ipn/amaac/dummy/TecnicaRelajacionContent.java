@@ -147,8 +147,6 @@ public class TecnicaRelajacionContent {
     }
 
 
-
-
     /**
      * A dummy item representing a piece of content.
      */
